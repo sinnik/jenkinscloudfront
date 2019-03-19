@@ -3,19 +3,14 @@
 
   "Description": "Syncapse Shared Services Stack Platform Recipe",
   
-  "Parameters": {
-	   "SecurityGroup": {
-	      "Type": "String",
-	      "Description" : "name of the security group to use for the instance"
-	    }
-  },
+  
 
   "Resources": {
 
 	    "Ec2Instance" : {
 	      "Type" : "AWS::EC2::Instance",
 	      "Properties" : {
-	        "SecurityGroups" : [ { "Ref" : "SecurityGroup" } ],
+	        
 	        "KeyName" : "nik",
 	        "ImageId" : "ami-76f0061f"
 	      }
