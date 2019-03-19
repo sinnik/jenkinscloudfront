@@ -31,10 +31,7 @@
       "Description" : "Public IP address of the newly created EC2 instance",
       "Value" : { "Fn::GetAtt" : [ "Ec2Instance", "PublicIp" ] }
     },
-    "SecurityGroup": {
-    	"Description" : "A security group to be reused",
-    	"Value" : { "Ref" : "SecurityGroup"}
-    }
+ 
   }
   
 }
