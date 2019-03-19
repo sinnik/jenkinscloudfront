@@ -31,6 +31,6 @@
       "Value" : { "Fn::GetAtt" : [ "Ec2Instance", "PublicIp" ] }
     },
     
-  }
+  },
   
 }
